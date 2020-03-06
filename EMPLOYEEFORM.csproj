@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E4E815F-98E1-4DCF-A695-85E4ADE54423}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMPLOYEEFORM</RootNamespace>
+    <AssemblyName>EMPLOYEEFORM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Windows\System32\cmd.exe</StartProgram>
+    <StartArguments>/K  gulp serve</StartArguments>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Windows\System32\cmd.exe</StartProgram>
+    <StartArguments>/K  gulp serve</StartArguments>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".vscode\extensions.json" />
+    <None Include=".vscode\launch.json" />
+    <None Include=".vscode\settings.json" />
+    <None Include=".yo-rc.json" />
+    <None Include="config\config.json" />
+    <None Include="config\copy-assets.json" />
+    <None Include="config\deploy-azure-storage.json" />
+    <None Include="config\package-solution.json" />
+    <None Include="config\serve.json" />
+    <None Include="config\write-manifests.json" />
+    <None Include="generator.log" />
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+    <None Include="src\webparts\employeeForm\components\EmployeeForm.module.scss" />
+    <None Include="src\webparts\employeeForm\EmployeeFormWebPart.manifest.json" />
+    <None Include="tsconfig.json" />
+    <None Include="tslint.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="gulpfile.js" />
+    <Content Include="src\webparts\employeeForm\loc\en-us.js" />
+    <Content Include="teams\a56054a6-d418-4db4-b131-026aa70640e1_color.png" />
+    <Content Include="teams\a56054a6-d418-4db4-b131-026aa70640e1_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\index.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\actions\EducationDetailAction.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\actions\HRFormControlsValuesAction.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\actions\NewFormControlsValuesAction.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\actions\PayrollFormControlsValuesAction.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\actions\ProfessionalDetailFormControlsValuesAction.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\actions\BasicEmpDetailAction.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\EmployeeForm.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\Fabric Components\DatePicker.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\Fabric Components\Spinner.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\IEmployeeFormProps.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\AppConstants.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\tabs\EducationDetail.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\tabs\EmployeeDetail.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\tabs\ProfessionalDetail.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\tabs\PayrollDetail.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\tabs\HRDetail.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\components\tabs\BasicDetail.tsx" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\EmployeeFormWebPart.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\loc\mystrings.d.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\CommonReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\EducationDetailReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\NewEmpRequestReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\ProfessionalDetailSectionReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\PayRollReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\HRSectionReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\reducers\BasicDetailReducer.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\services\BasicFormService.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\services\IBasicFormService.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\services\NewEmployeeService.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\services\INewEmpRequestService.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\services\UtilityService.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\IProfessionalDetailControlState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\IPayrollState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\ICommonState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\IEducationDetailState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\IHRSectionControlsState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\INewFormControlsState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\state\IBasicDetailState.ts" />
+    <TypeScriptCompile Include="src\webparts\employeeForm\store\ConfigureStore.ts" />
+  </ItemGroup>
+  <ItemGroup />
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

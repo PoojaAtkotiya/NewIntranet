@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.10.0",
+    "libraryName": "employeeform",
+    "libraryId": "27d20881-84ff-4e6f-a48c-917ecb0a82e0",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "EMPLOYEEFORM",
+    "skipFeatureDeployment": "false",
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "employeeForm",
+    "componentDescription": "employee form",
+    "isCreatingSolution": true,
+    "isDomainIsolated": "false"
+  }
+}

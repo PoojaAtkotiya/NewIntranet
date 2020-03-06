@@ -1,0 +1,60 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.intranetNewJoinee {
+    .container {
+        width: 100%;
+        margin: 0px auto;
+        /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);*/
+        border: 1px solid hsla(0,4%,85%,.699);
+    }
+
+    .row {
+        @include ms-Grid-row;
+        @include ms-fontColor-white;
+        //background-color: $ms-color-themeDark;
+        padding: 0 0 20px;
+        height: 300px;
+    }
+
+    .column {
+        @include ms-Grid-col;
+        /*
+             @include ms-lg10;
+             @include ms-xl8;
+             @include ms-xlPush2;
+        @include ms-lgPush1;
+        */
+        width: 100% !important;
+    }
+
+    .imagearea {
+        height: 200px;
+    }
+
+    .para {
+        color: #323130;
+        font-weight: normal;
+        font-size: 15px;
+        padding-top: 0;
+        padding-left: 15px;
+    }
+
+    .BirthdayHeader {
+        color: #3F51B6;
+        font-weight: 500;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+
+    .rightalig {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-right: 0;
+        padding-top: 0;
+        color: #000;
+        padding-top: 60px;
+        width: 300px;
+    }
+}
